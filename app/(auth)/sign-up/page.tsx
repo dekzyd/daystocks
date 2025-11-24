@@ -59,13 +59,6 @@ const SignUp = () => {
             message: "Email Address is required",
           }}
         />
-        <CountrySelectField
-          name="country"
-          label="Country"
-          control={control}
-          error={errors.country}
-          required
-        />
         <InputField
           name="password"
           label="Password"
@@ -99,6 +92,13 @@ const SignUp = () => {
           options={PREFERRED_INDUSTRIES}
           control={control}
           error={errors.preferredIndustry}
+        />
+        <CountrySelectField
+          name="country"
+          label="Country"
+          control={control}
+          error={errors.country}
+          required
         />
 
         <Button
